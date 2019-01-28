@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Lab2.Models.Category>
+
+@{
+    ViewBag.Title = "Categories";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Title.</h2>
+
+<ul>
+    <li>@Html.ActionLink("Food", "ViewCategory", "Categories", new { CategoryName = "Food" }, null)</li>
+    <li>@Html.ActionLink("Tech", "ViewCategory", "Categories", new { CategoryName = "Tech" }, null)</li>
+    <li>@Html.ActionLink("Sports", "ViewCategory", "Categories", new { CategoryName = "Sports" }, null)</li>
+</ul>
